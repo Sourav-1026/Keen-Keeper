@@ -1,4 +1,9 @@
 import React from "react";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { FiArchive, FiPhoneCall } from "react-icons/fi";
+import { HiOutlineBellSnooze } from "react-icons/hi2";
+import { LuVideo } from "react-icons/lu";
+import { PiChatText } from "react-icons/pi";
 import { useParams, useRouteLoaderData } from "react-router";
 
 const FriendsDetailsPage = () => {
@@ -9,11 +14,11 @@ const FriendsDetailsPage = () => {
   console.log(expectedFriend);
 
   return (
-    <div className="w-7xl mx-auto">
-      <div className="dib-main flex justify-between">
-        <div className="dib-left">
+    <div className="w-7xl mx-auto my-20">
+      <div className="dib-main flex gap-5">
+        <div className="dib-left space-y-3.5">
           <div className="dib up">
-            <div className="shadow-md border border-gray-200 rounded-md bg-base-200 flex flex-col justify-center items-center p-5 space-y-2.5">
+            <div className="shadow-md border border-gray-200 rounded-md  flex flex-col justify-center items-center p-5 space-y-2.5">
               <div className="flex justify-center items-center">
                 <img className="rounded-full" src={expectedFriend.picture} alt="" />
               </div>
@@ -28,58 +33,63 @@ const FriendsDetailsPage = () => {
                   <div className="badge bg-[#CBFADB] text-[#244D3F]">{t}</div>
                 ))}
               </div>
-              <p>{expectedFriend.bio}</p>
-              <p>Prefered: Mail</p>
+              <p className="text-center text-gray-400">{expectedFriend.bio}</p>
+              <p className="text-gray-400">Prefered: Mail</p>
             </div>
           </div>
-          <div className="dib bottom shadow-md rounded-md border border-gray-200">
-            <div className="">
-              <button className="btn">Snooze 2 weeks</button>
+          <div className="dib bottom space-y-3">
+            <div className="p-5 btn flex justify-center">
+              <HiOutlineBellSnooze />
+              Snooze 2 weeks
             </div>
-            <div className="">
-              <button className="btn">Archive</button>
+            <div className="p-5 btn flex justify-center">
+              <FiArchive />
+              Archive
             </div>
-            <div className="">
-              <button className="btn">Delete</button>
+            <div className="p-5 btn flex justify-center text-red-500">
+              <FaRegTrashAlt />
+              Delete
             </div>
           </div>
         </div>
-        <div className="dib-right">
-          <div className="dib-up shadow-md rounded-md border border-gray-200">
-            <div className="">
-              <span>0</span>
-              <p>Days Since Contact</p>
+        <div className="dib-right w-full flex flex-col space-y-5">
+          <div className="dib-up shadow-md rounded-md border border-gray-200 flex justify-between p-5 py-10">
+            <div className="shadow-md rounded-md border border-gray-200 px-15 flex flex-col justify-center items-center py-8 space-y-2.5">
+              <span className="text-xl font-semibold text-[#244D3F]">{expectedFriend.days_since_contact}</span>
+              <p className="text-gray-400">Days Since Contact</p>
             </div>
-            <div className="">
-              <span>0</span>
-              <p>Goal (Days)</p>
+            <div className="shadow-md rounded-md border border-gray-200 px-15 flex flex-col justify-center items-center py-8 space-y-2.5">
+              <span className="text-xl font-semibold text-[#244D3F]">{expectedFriend.goal}</span>
+              <p className="text-gray-400">Goal (Days)</p>
             </div>
-            <div className="">
-              <span>0</span>
-              <p>Next Due</p>
-            </div>
-          </div>
-          <div className="dib-middle flex justify-between shadow-md rounded-md border border-gray-200">
-            <div className="">
-              <h5>RelationShip Goal</h5>
-              <p>Connect Every 30 days</p>
-              <button className="btn">Edit</button>
+            <div className="shadow-md rounded-md border border-gray-200 px-15 flex flex-col justify-center items-center py-8 space-y-2.5">
+              <span className="text-xl font-semibold text-[#244D3F]">{expectedFriend.next_due_date}</span>
+              <p className="text-gray-400">Next Due</p>
             </div>
           </div>
-          <div className="dib-bottom shadow-md rounded-md border border-gray-200">
-            <h5>Quick Check In</h5>
-            <div className="">
-              <div className="">
-                <p>Icon</p>
-                <p>Call</p>
+          <div className="dib-middle flex justify-between shadow-md rounded-md border border-gray-200 p-5 py-8">
+            <div className="space-y-2.5">
+              <h5 className="text-2xl font-semibold text-[#244D3F]">RelationShip Goal</h5>
+              <p>
+                <span className="text-gray-400">Connect Every</span> 30 days
+              </p>
+            </div>
+            <button className="btn">Edit</button>
+          </div>
+          <div className="dib-bottom shadow-md rounded-md border border-gray-200 p-5 py-8 space-y-6">
+            <h5 className="text-2xl font-semibold text-[#244D3F]">Quick Check-In</h5>
+            <div className="flex justify-between">
+              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+                <FiPhoneCall className="w-10 h-10 mb-6" />
+                <p className="text-xl font-semibold">Call</p>
               </div>
-              <div className="">
-                <p>Icon</p>
-                <p>Call</p>
+              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+                <PiChatText className="w-10 h-10 mb-6" />
+                <p className="text-xl font-semibold">Text</p>
               </div>
-              <div className="">
-                <p>Icon</p>
-                <p>Call</p>
+              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+                <LuVideo className="w-10 h-10 mb-6" />
+                <p className="text-xl font-semibold">Video</p>
               </div>
             </div>
           </div>

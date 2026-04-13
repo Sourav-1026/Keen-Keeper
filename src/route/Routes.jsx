@@ -3,7 +3,7 @@ import RootLayout from "../layout/RootLayout";
 import HomePage from "../pages/HomePage";
 import TimelinePage from "../pages/TimelinePage";
 import StatsPage from "../pages/StatsPage";
-import FriendsDetailsPage from "../pages/friendsDetailsPage";
+import FriendsDetailsPage from "../pages/FriendsDetailsPage";
 
 export const router = createBrowserRouter([
   {
