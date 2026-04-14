@@ -5,13 +5,25 @@ import { HiOutlineBellSnooze } from "react-icons/hi2";
 import { LuVideo } from "react-icons/lu";
 import { PiChatText } from "react-icons/pi";
 import { useParams, useRouteLoaderData } from "react-router";
+import { useTimeLine } from "../context/TimeLineProvider";
 
 const FriendsDetailsPage = () => {
   const { id } = useParams();
   const friends = useRouteLoaderData("root");
 
   const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
-  console.log(expectedFriend);
+
+  const { addActivity } = useTimeLine();
+
+  const handleAddActivity = (type) => {
+    const newActivity = {
+      id: Date.now(),
+      type,
+      name: expectedFriend.name,
+      date: new Date(),
+    };
+    addActivity(newActivity);
+  };
 
   return (
     <div className="w-7xl mx-auto my-20">
@@ -79,18 +91,18 @@ const FriendsDetailsPage = () => {
           <div className="dib-bottom shadow-md rounded-md border border-gray-200 p-5 py-8 space-y-6">
             <h5 className="text-2xl font-semibold text-[#244D3F]">Quick Check-In</h5>
             <div className="flex justify-between">
-              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+              <button onClick={() => handleAddActivity("call")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
                 <FiPhoneCall className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Call</p>
-              </div>
-              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+              </button>
+              <button onClick={() => handleAddActivity("text")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
                 <PiChatText className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Text</p>
-              </div>
-              <div className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+              </button>
+              <button onClick={() => handleAddActivity("video")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
                 <LuVideo className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Video</p>
-              </div>
+              </button>
             </div>
           </div>
         </div>
