@@ -6,6 +6,7 @@ import videoImage from "../assets/video.png";
 
 const TimelinePage = () => {
   const { timeLine } = useTimeLine();
+  console.log(timeLine);
 
   const getImage = (type) => {
     switch (type) {
