@@ -12,11 +12,11 @@ const StatsPage = () => {
   };
 
   timeLine.forEach((item) => {
-    if (item.type === "call") {
+    if (item.type === "Call") {
       counts.call++;
-    } else if (item.type === "text") {
+    } else if (item.type === "Text") {
       counts.text++;
-    } else if (item.type === "video") {
+    } else if (item.type === "Video") {
       counts.video++;
     }
   });

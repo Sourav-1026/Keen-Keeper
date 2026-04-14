@@ -25,7 +25,7 @@ const Footer = () => {
             <img src={twitterImg} alt="" />
           </div>
         </div>
-        <div className="divider"></div>
+        <div className="divider before:bg-green-950 after:bg-green-950"></div>
         <div className="flex justify-between text-gray-300">
           <p>© 2026 KeenKeeper. All rights reserved.</p>
           <div className="flex items-center gap-5">

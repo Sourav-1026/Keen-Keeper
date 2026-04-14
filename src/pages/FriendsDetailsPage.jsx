@@ -6,6 +6,7 @@ import { LuVideo } from "react-icons/lu";
 import { PiChatText } from "react-icons/pi";
 import { useParams, useRouteLoaderData } from "react-router";
 import { useTimeLine } from "../context/TimeLineProvider";
+import { toast } from "react-toastify";
 
 const FriendsDetailsPage = () => {
   const { id } = useParams();
@@ -23,6 +24,7 @@ const FriendsDetailsPage = () => {
       date: new Date(),
     };
     addActivity(newActivity);
+    toast.success(`${type} with ${expectedFriend.name}`, { position: "top-center" });
   };
 
   return (
@@ -65,7 +67,7 @@ const FriendsDetailsPage = () => {
           </div>
         </div>
         <div className="dib-right w-full flex flex-col space-y-5">
-          <div className="dib-up shadow-md rounded-md border border-gray-200 flex justify-between p-5 py-10">
+          <div className="dib-up  flex justify-between items-center">
             <div className="shadow-md rounded-md border border-gray-200 px-15 flex flex-col justify-center items-center py-8 space-y-2.5">
               <span className="text-xl font-semibold text-[#244D3F]">{expectedFriend.days_since_contact}</span>
               <p className="text-gray-400">Days Since Contact</p>
@@ -90,16 +92,25 @@ const FriendsDetailsPage = () => {
           </div>
           <div className="dib-bottom shadow-md rounded-md border border-gray-200 p-5 py-8 space-y-6">
             <h5 className="text-2xl font-semibold text-[#244D3F]">Quick Check-In</h5>
-            <div className="flex justify-between">
-              <button onClick={() => handleAddActivity("call")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+            <div className="flex justify-between items-center">
+              <button
+                onClick={() => handleAddActivity("Call")}
+                className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8 hover:bg-gray-200"
+              >
                 <FiPhoneCall className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Call</p>
               </button>
-              <button onClick={() => handleAddActivity("text")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+              <button
+                onClick={() => handleAddActivity("Text")}
+                className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8 hover:bg-gray-200"
+              >
                 <PiChatText className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Text</p>
               </button>
-              <button onClick={() => handleAddActivity("video")} className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8">
+              <button
+                onClick={() => handleAddActivity("Video")}
+                className="shadow-md rounded-md border border-gray-200 px-25 bg-base-200 flex flex-col justify-center items-center py-8 hover:bg-gray-200"
+              >
                 <LuVideo className="w-10 h-10 mb-6" />
                 <p className="text-xl font-semibold">Video</p>
               </button>

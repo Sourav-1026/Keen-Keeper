@@ -5,11 +5,13 @@ import { RouterProvider } from "react-router/dom";
 
 import { router } from "./route/Routes";
 import { TimeLineProvider } from "./context/TimeLineProvider";
+import { ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <TimeLineProvider>
       <RouterProvider router={router} />
+      <ToastContainer />
     </TimeLineProvider>
   </StrictMode>,
 );

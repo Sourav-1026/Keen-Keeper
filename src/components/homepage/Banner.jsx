@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="w-7xl mx-auto my-10">
       <div className="text-center space-y-6">
         <h1 className="text-6xl font-extrabold text-[#244D3F]">Friends to keep close in your life</h1>
-        <p>
+        <p className="text-gray-400 text-lg">
           Your personal shelf of meaningful connections. Browse, tend, and nurture the <br /> relationships that matter most.
         </p>
       </div>
@@ -16,20 +16,20 @@ const Banner = () => {
       </button>
       <div className="flex justify-between items-center mt-6">
         <div className="flex flex-col items-center shadow-md border border-gray-200 rounded-md px-25 py-8">
-          <span className="text-2xl font-bold text-[#244D3F]">10</span>
-          <p>Total Friends</p>
+          <span className="text-2xl font-bold text-[#244D3F]">14</span>
+          <p className="text-gray-400">Total Friends</p>
         </div>
         <div className="flex flex-col items-center shadow-md border border-gray-200 rounded-md px-25 py-8">
           <span className="text-2xl font-bold text-[#244D3F]">3</span>
-          <p>On Track</p>
+          <p className="text-gray-400">On Track</p>
         </div>
         <div className="flex flex-col items-center shadow-md border border-gray-200 rounded-md px-25 py-8">
           <span className="text-2xl font-bold text-[#244D3F]">6</span>
-          <p>Need Attention</p>
+          <p className="text-gray-400">Need Attention</p>
         </div>
         <div className="flex flex-col items-center shadow-md border border-gray-200 rounded-md px-25 py-8">
           <span className="text-2xl font-bold text-[#244D3F]">12</span>
-          <p>Interactions this month</p>
+          <p className="text-gray-400">Interactions this month</p>
         </div>
       </div>
       <div className="divider mt-6"></div>
