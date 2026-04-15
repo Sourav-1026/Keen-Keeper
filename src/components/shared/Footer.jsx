@@ -7,36 +7,37 @@ import twitterImg from "../../assets/twitter.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#244D3F]">
-      <div className="max-w-7xl mx-auto px-4 py-10 space-y-6 text-white">
-        {/* Logo */}
+    <div className="bg-[#244D3F] pt-12 md:pt-16 lg:pt-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:w-7xl lg:p-10 space-y-4 text-white">
         <div className="flex justify-center">
-          <img className="w-32 sm:w-40" src={footerlogo} alt="" />
+          <img className="w-28 md:w-36 lg:w-auto" src={footerlogo} alt="" />
         </div>
 
-        {/* Description */}
-        <p className="text-center text-gray-300 text-sm sm:text-base max-w-xl mx-auto">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+        <p className="text-center text-gray-300 text-sm md:text-base lg:text-base">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
-        {/* Social */}
-        <p className="text-center text-lg sm:text-xl font-bold">Social Links</p>
+        <p className="text-center text-lg md:text-xl lg:text-xl font-bold">Social Links</p>
 
-        <div className="flex justify-center items-center gap-4">
-          <img className="w-6 sm:w-7 cursor-pointer" src={instagramImg} alt="" />
-          <img className="w-6 sm:w-7 cursor-pointer" src={facebookImg} alt="" />
-          <img className="w-6 sm:w-7 cursor-pointer" src={twitterImg} alt="" />
+        <div className="flex justify-center items-center gap-3 md:gap-4 lg:gap-3.5">
+          <div>
+            <img src={instagramImg} alt="" className="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto" />
+          </div>
+          <div>
+            <img src={facebookImg} alt="" className="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto" />
+          </div>
+          <div>
+            <img src={twitterImg} alt="" className="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto" />
+          </div>
         </div>
 
-        {/* Divider */}
         <div className="divider before:bg-green-950 after:bg-green-950"></div>
 
-        {/* Bottom Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-300 text-sm">
-          <p className="text-center sm:text-left">© 2026 KeenKeeper. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center text-gray-300 text-xs md:text-sm lg:text-base gap-3 md:gap-0">
+          <p className="text-center md:text-left lg:text-left">© 2026 KeenKeeper. All rights reserved.</p>
 
-          <div className="flex flex-wrap justify-center sm:justify-end items-center gap-4">
-            <p className="cursor-pointer hover:text-white">Privacy Policy</p>
-            <p className="cursor-pointer hover:text-white">Terms of Service</p>
-            <p className="cursor-pointer hover:text-white">Cookies</p>
+          <div className="flex flex-wrap md:flex-nowrap lg:flex-nowrap justify-center md:justify-end gap-3 md:gap-5 lg:gap-5">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookies</p>
           </div>
         </div>
       </div>
