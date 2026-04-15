@@ -1,16 +1,30 @@
-# React + Vite
+# 🎯 Keen Keeper – Friend Activity Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 Description
 
-Currently, two official plugins are available:
+- A smart and interactive friend tracking web app where users can view their friends, explore detailed profiles, and simulate real-life communication interactions. Users can call, text, or video chat with friends, and every activity is recorded in a timeline with date and time. The app also provides insights through visual stats to better understand interaction patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚙️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- React Router
+- Tailwind CSS, DaisyUI
+- JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- JSON (for product data)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ 3 Features About My Project
+
+- 👥 Friend Profiles – Browse all friends in a clean card layout and view detailed information by clicking on each profile.
+- 📞 Activity Tracking – Call, text, or video interactions trigger real-time toast notifications and get saved into a timeline with date & time.
+- 📊 Stats Visualization – Interactive pie chart showing total calls, texts, and video interactions for better insights.
+
+---
+
+## 🚀 Live Demo
+
+🔗 https://digital-tools-1026.netlify.app/
