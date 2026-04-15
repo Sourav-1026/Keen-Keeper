@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import TimelinePage from "../pages/TimelinePage";
 import StatsPage from "../pages/StatsPage";
 import FriendsDetailsPage from "../pages/FriendsDetailsPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,5 +33,6 @@ export const router = createBrowserRouter([
         element: <FriendsDetailsPage />,
       },
     ],
+    errorElement: <NotFoundPage />,
   },
 ]);
