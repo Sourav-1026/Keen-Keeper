@@ -1,4 +1,4 @@
-# 🎯 Keen Keeper – Friend Activity Tracker
+# 📍 Keen Keeper – Friend Activity Tracker
 
 ## 📄 Description
 
@@ -27,4 +27,4 @@
 
 ## 🚀 Live Demo
 
-🔗 https://digital-tools-1026.netlify.app/
+🔗 https://keen-keeper-sandy.vercel.app/

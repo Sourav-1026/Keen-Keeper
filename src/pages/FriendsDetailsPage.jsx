@@ -73,7 +73,7 @@ const FriendsDetailsPage = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-full flex flex-col gap-5">
+        <div className="w-full flex flex-col gap-5 space-y-0 lg:space-y-6">
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="shadow-md rounded-md border border-gray-200 flex flex-col items-center py-6">
