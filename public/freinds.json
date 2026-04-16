@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://i.ibb.co.com/WXwz8w7/img-1.jpg",
+    "picture": "/img_1.jpg",
     "email": "john.doe@gmail.com",
     "days_since_contact": 18,
     "status": "Overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Aisha Rahman",
-    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "picture": "/img_2.jpg",
     "email": "aisha.rahman@gmail.com",
     "days_since_contact": 6,
     "status": "On-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Chen",
-    "picture": "https://randomuser.me/api/portraits/men/65.jpg",
+    "picture": "/img_3.jpg",
     "email": "michael.chen@yahoo.com",
     "days_since_contact": 13,
     "status": "Almost due",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sara Ahmed",
-    "picture": "https://i.ibb.co.com/C3gM2jxY/img-4.jpg",
+    "picture": "/img_4.jpg",
     "email": "sara.ahmed@gmail.com",
     "days_since_contact": 21,
     "status": "Overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Wilson",
-    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "picture": "/img_5.jpg",
     "email": "david.wilson@outlook.com",
     "days_since_contact": 3,
     "status": "On-track",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Nusrat Jahan",
-    "picture": "https://i.ibb.co.com/8DGzK1RH/img-6.jpg",
+    "picture": "/img_6.jpg",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 9,
     "status": "Almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "James Anderson",
-    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "picture": "/img_7.jpg",
     "email": "j.anderson@gmail.com",
     "days_since_contact": 16,
     "status": "Overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Fatima Noor",
-    "picture": "https://i.ibb.co.com/yMNjMpt/img-78.jpg",
+    "picture": "/img_8.jpg",
     "email": "fatima.noor@gmail.com",
     "days_since_contact": 5,
     "status": "On-track",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Rahim Uddin",
-    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "picture": "/img_9.jpg",
     "email": "rahim.uddin@gmail.com",
     "days_since_contact": 20,
     "status": "Overdue",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Emily Carter",
-    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "picture": "/img_10.jpg",
     "email": "emily.carter@gmail.com",
     "days_since_contact": 8,
     "status": "Almost due",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Hasan Mahmud",
-    "picture": "https://randomuser.me/api/portraits/men/29.jpg",
+    "picture": "/img_11.jpg",
     "email": "hasan.mahmud@gmail.com",
     "days_since_contact": 2,
     "status": "On-track",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Sophia Martinez",
-    "picture": "https://i.ibb.co.com/xqPC3rtc/img-12.jpg",
+    "picture": "/img_12.jpg",
     "email": "sophia.martinez@gmail.com",
     "days_since_contact": 11,
     "status": "Almost due",
@@ -146,7 +146,7 @@
   {
     "id": 13,
     "name": "Arif Hossain",
-    "picture": "https://randomuser.me/api/portraits/men/53.jpg",
+    "picture": "/img_13.jpg",
     "email": "arif.hossain@gmail.com",
     "days_since_contact": 17,
     "status": "Overdue",
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "name": "Lina Chowdhury",
-    "picture": "https://randomuser.me/api/portraits/women/37.jpg",
+    "picture": "/img_14.jpg",
     "email": "lina.chowdhury@gmail.com",
     "days_since_contact": 4,
     "status": "On-track",
