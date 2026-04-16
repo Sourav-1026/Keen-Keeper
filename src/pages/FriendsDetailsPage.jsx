@@ -52,7 +52,7 @@ const FriendsDetailsPage = () => {
 
             <p className="text-center text-gray-400 text-sm">{expectedFriend.bio}</p>
 
-            <p className="text-gray-400 text-sm">Preferred: Mail</p>
+            <p className="text-gray-400 text-sm">Email: {expectedFriend.email}</p>
           </div>
 
           {/* Buttons */}

@@ -1,4 +1,4 @@
-# 📍 Keen Keeper – Friend Activity Tracker
+# 📍 Keen Keeper – Friends Activity Tracker
 
 ## 📄 Description
 
