@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "picture": "https://i.ibb.co.com/WXwz8w7/img-1.jpg",
     "email": "john.doe@gmail.com",
     "days_since_contact": 18,
     "status": "Overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sara Ahmed",
-    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "picture": "https://i.ibb.co.com/C3gM2jxY/img-4.jpg",
     "email": "sara.ahmed@gmail.com",
     "days_since_contact": 21,
     "status": "Overdue",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Nusrat Jahan",
-    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "picture": "https://i.ibb.co.com/8DGzK1RH/img-6.jpg",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 9,
     "status": "Almost due",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Fatima Noor",
-    "picture": "https://randomuser.me/api/portraits/women/15.jpg",
+    "picture": "https://i.ibb.co.com/yMNjMpt/img-78.jpg",
     "email": "fatima.noor@gmail.com",
     "days_since_contact": 5,
     "status": "On-track",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Sophia Martinez",
-    "picture": "https://randomuser.me/api/portraits/women/63.jpg",
+    "picture": "https://i.ibb.co.com/xqPC3rtc/img-12.jpg",
     "email": "sophia.martinez@gmail.com",
     "days_since_contact": 11,
     "status": "Almost due",
